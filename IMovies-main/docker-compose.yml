@@ -1,0 +1,44 @@
+# Runs the whole site: MongoDB + API + website (nginx).  Open http://localhost:8080
+# Start with start-docker.bat (Windows) or:  docker compose up -d --build
+name: imovies
+
+services:
+  mongo:
+    image: mongo:7
+    restart: unless-stopped
+    volumes:
+      - mongo-data:/data/db
+    ports:
+      - "127.0.0.1:27017:27017" # only this computer, handy for MongoDB Compass
+    healthcheck:
+      test: ["CMD", "mongosh", "--quiet", "--eval", "db.adminCommand('ping').ok"]
+      interval: 5s
+      timeout: 5s
+      retries: 12
+
+  server:
+    build: ./server
+    restart: unless-stopped
+    depends_on:
+      mongo:
+        condition: service_healthy
+    environment:
+      PORT: 5000
+      # Set MONGO_URI in the .env file next to this one to use MongoDB Atlas instead
+      MONGO_URI: ${MONGO_URI:-mongodb://mongo:27017/imovies}
+      JWT_SECRET: ${JWT_SECRET:?JWT_SECRET is missing. Run start-docker.bat or copy .env.example to .env}
+      JWT_EXPIRES_IN: 7d
+      CLIENT_URL: ${CLIENT_URL:-http://localhost:8080}
+      SEAT_HOLD_MINUTES: 5
+      TMDB_API_KEY: ${TMDB_API_KEY:-}
+
+  client:
+    build: ./client
+    restart: unless-stopped
+    depends_on:
+      - server
+    ports:
+      - "8080:80"
+
+volumes:
+  mongo-data:

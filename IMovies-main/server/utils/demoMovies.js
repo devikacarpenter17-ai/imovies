@@ -1,0 +1,73 @@
+// Fictional placeholder movies, used only when no TMDB key is configured.
+module.exports = [
+  {
+    title: 'The Last Reel', tagline: 'Some stories refuse to end.',
+    description: 'When a retired projectionist finds an unmarked film can in a closing cinema, every screening of it rewrites a little more of the town. A slow-burn mystery about memory, grief and the people who keep the lights on.',
+    genres: ['Mystery', 'Drama'], language: 'English', durationMins: 128, certificate: 'UA', score: 8.4,
+    director: 'Mira Calloway', cast: ['Anand Rao', 'Elise Duarte', 'Tomas Weir'],
+    theme: { from: '#5b2a86', to: '#120d1c', accent: '#ffb020' }, daysAgo: 12,
+  },
+  {
+    title: 'Monsoon Express', tagline: 'Twelve hours. One train. No brakes.',
+    description: 'A night train crosses flooded country with a runaway engine, a missing guard and 400 strangers. A taut, rain-soaked thriller with a ticking clock in every carriage.',
+    genres: ['Thriller', 'Action'], language: 'Hindi', durationMins: 141, certificate: 'UA', score: 8.1,
+    director: 'Kabir Sethi', cast: ['Rhea Malhotra', 'Dev Khanna', 'Sunita Pillai'],
+    theme: { from: '#0f5c63', to: '#0a1418', accent: '#ff7a59' }, daysAgo: 5,
+  },
+  {
+    title: 'Paper Moons', tagline: 'Fold a wish. Throw it high.',
+    description: 'Two siblings build a city out of origami to keep their grandmother company, until the city starts building itself. A warm, handmade animated adventure for the whole family.',
+    genres: ['Animation', 'Family'], language: 'English', durationMins: 96, certificate: 'U', score: 7.9,
+    director: 'Yuki Hartmann', cast: ['Voices of Ava Lindqvist', 'Ravi Menon'],
+    theme: { from: '#e0a458', to: '#2b1d3a', accent: '#fff3d6' }, daysAgo: 20,
+  },
+  {
+    title: 'Salt & Static', tagline: 'Hear the coast before it disappears.',
+    description: 'A sound recordist maps a vanishing fishing village for an archive, only to find the tapes pick up voices from a century ago. Quiet, eerie and beautifully shot.',
+    genres: ['Horror', 'Drama'], language: 'English', durationMins: 112, certificate: 'A', score: 7.6,
+    director: 'Ines Okafor', cast: ['Jonah Pike', 'Mei-Lin Zhao'],
+    theme: { from: '#27405a', to: '#0b0f14', accent: '#9ad1d4' }, daysAgo: 3,
+  },
+  {
+    title: 'Chai Wars', tagline: 'Two stalls. One street. Zero chill.',
+    description: 'Rival tea sellers at a railway junction escalate a price war into a citywide farce. A fast, funny comedy with a big heart and bigger kettles.',
+    genres: ['Comedy'], language: 'Hindi', durationMins: 118, certificate: 'U', score: 7.8,
+    director: 'Neha Bhargava', cast: ['Vikram Joshi', 'Tara Menon', 'Gopal Iyer'],
+    theme: { from: '#b4441f', to: '#2a1109', accent: '#ffd36e' }, daysAgo: 8,
+  },
+  {
+    title: 'Orbit of Small Things', tagline: 'The universe is mostly empty. Mostly.',
+    description: 'A lone maintenance engineer on a dying space station befriends the station\'s forgotten robots. A gentle, funny and unexpectedly moving science-fiction story.',
+    genres: ['Sci-Fi', 'Drama'], language: 'English', durationMins: 134, certificate: 'UA', score: 8.6,
+    director: 'Lucas Ferreira', cast: ['Priya Raman', 'Idris Cole'],
+    theme: { from: '#1c2a6b', to: '#07080f', accent: '#7fd6ff' }, daysAgo: 15,
+  },
+  {
+    title: 'Kesariya Nights', tagline: 'A wedding. A secret. A very long road.',
+    description: 'On the drive to a destination wedding, a family of five unpacks twenty years of unsaid things. A funny, tender road drama across the Malwa plateau.',
+    genres: ['Drama', 'Romance'], language: 'Hindi', durationMins: 126, certificate: 'U', score: 8.0,
+    director: 'Aarav Deshmukh', cast: ['Meera Kulkarni', 'Sanjay Patil', 'Ishaan Verma'],
+    theme: { from: '#c2410c', to: '#1b0b12', accent: '#ffe08a' }, daysAgo: 2,
+  },
+  {
+    title: 'Glasshouse', tagline: 'Everyone is watching. Nobody is looking.',
+    description: 'A glass-walled apartment tower. One night. A neighbour sees something she cannot unsee. A sleek, nerve-shredding thriller.',
+    genres: ['Thriller', 'Mystery'], language: 'English', durationMins: 104, certificate: 'UA', score: 7.4,
+    director: 'Hana Whitlock', cast: ['Nora Bell', 'Samir Haddad'],
+    theme: { from: '#2f4858', to: '#0c1116', accent: '#f6ae2d' }, daysAgo: 1,
+  },
+  {
+    title: 'Northern Lights Rally', tagline: 'Coming this winter.',
+    description: 'A privateer team takes on the world\'s coldest rally with a car they built in a garage. Big engines, bigger stakes.',
+    genres: ['Action', 'Sports'], language: 'English', durationMins: 130, certificate: 'UA', score: 0,
+    director: 'Peter Lindqvist', cast: ['Marta Nilsen', 'Kofi Mensah'],
+    theme: { from: '#134e4a', to: '#06120f', accent: '#b9f5d0' }, daysAgo: -21, status: 'upcoming',
+  },
+  {
+    title: 'Dhun', tagline: 'A song that changed a city.',
+    description: 'A street musician in a crowded old city writes one melody that everyone hums, and nobody can place. A musical drama about how songs travel.',
+    genres: ['Musical', 'Drama'], language: 'Hindi', durationMins: 138, certificate: 'U', score: 0,
+    director: 'Rukmini Das', cast: ['Aditya Ghosh', 'Lavanya Nair'],
+    theme: { from: '#7c2d5c', to: '#14081a', accent: '#ffc2e0' }, daysAgo: -35, status: 'upcoming',
+  },
+];

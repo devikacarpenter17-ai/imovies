@@ -1,0 +1,10 @@
+node_modules/
+.env
+dist/
+*.log
+.DS_Store
+.tmdb_skipped
+.tmdb_imported
+.movies_imported
+server/.env
+client/node_modules/
